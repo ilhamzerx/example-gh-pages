@@ -8,24 +8,31 @@
     <meta property="og:title" content="IDNRemote.com" />
     <meta
       property="og:description"
-      content="IDNRemote.com is Indonesia’s largest remote job board, founded to help digital talents unlock global career opportunities. What started as a simple spreadsheet has grown into a thriving community dedicated to empowering and supporting each other in the remote work landscape, bridging the gap between local talent and global careers."
+      content="IDNRemote.com is Indonesia's largest remote job board, founded to help digital talents unlock global career opportunities. What started as a simple spreadsheet has grown into a thriving community dedicated to empowering and supporting each other in the remote work landscape, bridging the gap between local talent and global careers."
     />
     <meta property="og:image" content="/assets/images/idnremote.png" />
     <title>Remote Jobs for Indonesian Talents</title>
-
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-PNDQVZSKHR"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-PNDQVZSKHR");
+    
+    <!-- Script for GitHub Pages SPA routing -->
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafgraph/spa-github-pages
+      // This script checks to see if a redirect is present in the query string,
+      // converts it back into the correct url and adds it to the
+      // browser's history using window.history.replaceState(...),
+      // which won't cause the browser to attempt to load the new url.
+      (function(l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
     </script>
   </head>
   <body>
